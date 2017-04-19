@@ -23,31 +23,11 @@
 
                 </a><!-- .account-link -->
 
-        <?php } else {
+        <?php
+        } else {
             echo do_shortcode( '[oauth2_login_url]' );
-            ?>
-            <?php
-            /*
-            ?>
-        <a href="<?php echo get_permalink( get_option('woocommerce_myaccount_page_id') ); ?>"
-            class="nav-top-link nav-top-not-logged-in <?php if($icon_style && $icon_style !== 'image') echo get_flatsome_icon_class($icon_style, 'small'); ?>"
-            <?php if(get_theme_mod('account_login_style','lightbox') == 'lightbox') echo 'data-open="#login-form-popup"'; ?>
-          >
-          <?php if(get_theme_mod('header_account_title', 1)) { ?>
-          <span>
-            <?php _e('Login', 'woocommerce'); ?>
-            <?php if(get_theme_mod('header_account_register')){
-                echo ' / '.__('Register', 'woocommerce');
-              } ?>
-          </span>
-          <?php } else {
-                echo get_flatsome_icon('icon-user');
-            } ?>
-
-        </a><!-- .account-login-link -->
-        <?php */
-
-        } ?>
+        }
+        ?>
 
         <?php if($icon_style && $icon_style !== 'image' && $icon_style !== 'plain') echo '</div>'; ?>
 
