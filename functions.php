@@ -1,4 +1,5 @@
 <?php
+
 // Add custom Theme Functions here
 function wc_get_custom_account_menu_items() {
     $endpoints = array(
